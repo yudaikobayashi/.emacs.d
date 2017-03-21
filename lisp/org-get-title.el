@@ -1,0 +1,3 @@
+(defun org-get-title ()
+  
+
