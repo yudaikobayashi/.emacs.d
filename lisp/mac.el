@@ -70,7 +70,3 @@
 ;; Splash image
 ;; (setq fancy-splash-image (expand-file-name "~/splash.png"))
 ;; (setq fancy-splash-image (expand-file-name "~/175_06l.jpg"))
-
-;; dashboard
-(require 'dashboard)
-(dashboard-setup-startup-hook)

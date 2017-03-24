@@ -7,35 +7,25 @@
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-
 (package-initialize)
-
-;;(require 'flycheck)
-;;(global-flycheck-mode)
 
 (require 'undo-tree)
 (global-undo-tree-mode)
 
 ;; Loading my elisp files
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-;;(load "chrome.el")
 (cond ((eq window-system 'mac) (load "mac.el"))
       ((eq window-system 'x) (load "ubuntu.el")))
-(load "frame.el")
-;;(load "lean.el")
-;;(load "proofgeneral.el")
 
-;;(global-set-key (kbd "<C-tab>") 'other-window)
 (global-set-key (kbd "<tab>") 'completion-at-point)
 (global-set-key (kbd "<C-tab>") 'next-buffer)
 (global-set-key (kbd "<backtab>") 'previous-buffer)
-(global-set-key (kbd "s-}") 'next-buffer)
-(global-set-key (kbd "s-{") 'previous-buffer)
+(global-set-key (kbd "s-]") 'next-buffer)
+(global-set-key (kbd "s-[") 'previous-buffer)
 
 ;; Line number
 (require 'linum)
 (global-linum-mode 1)
-(global-set-key (kbd "s-l") 'linum-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -73,3 +63,10 @@
 (setq nxml-child-indent 4 nxml-attribute-indent 4)
 
 ;; (setq confirm-kill-emacs 'y-or-n-p)
+
+;; dashboard
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+;;(setq dashboard-items '((recents . 5) (bookmarks . 5) (projects . 5)))
+;;(setq dashboard-banner-logo-title "Welcome to ｱｯｶﾘ~ﾝ")
+;;(setq dashboard-startup-banner "~/Downloads/akari.jpeg")
