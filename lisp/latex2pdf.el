@@ -3,7 +3,7 @@
   "Typesetting .tex file by ptex2pdf and reload .pdf in TeXShp.app."
   (shell-command (concat
  		  "cd " (file-name-directory filename) " && "
- 		  "/Library/TeX/texbin/ptex2pdf -l -ot \"-synctex=1 -file-line-error\" "
+		  "/Library/TeX/texbin/ptex2pdf -l -ot \"-synctex=1 -file-line-error\" "
  		  (file-name-nondirectory filename)
  		  " &> /dev/null"
 		  " && "
