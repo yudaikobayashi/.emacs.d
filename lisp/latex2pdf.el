@@ -17,7 +17,7 @@
   (interactive)
   (save-buffer)
   (if (boundp 'tex-master)
-      (latex2pdf tex-master)
+      (latex2pdf (expand-file-name tex-master))
     (latex2pdf (buffer-file-name))))
 
 ;; Open PDF file
