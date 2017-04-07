@@ -1,6 +1,6 @@
 ;; latex2pdf
 (defun latex2pdf (filename)
-  "Typesetting .tex file by ptex2pdf and reload .pdf in TeXShp.app."
+  "Typesetting .tex file by ptex2pdf and reload .pdf in TeXShop.app."
   (shell-command (concat
  		  "cd " (file-name-directory filename) " && "
  		  "/Library/TeX/texbin/ptex2pdf -l -ot \"-synctex=1 -file-line-error\" "
@@ -43,8 +43,6 @@
   (if (boundp 'tex-master)
       (latex2pdf-chrome-reload-file (concat (file-name-sans-extension tex-master) ".pdf"))
     (latex2pdf-chrome-reload-file (concat (file-name-sans-extension (buffer-file-name)) ".pdf"))))
-
-
 
 ;; BibTeX
 (defun my-bibtex (filename)
