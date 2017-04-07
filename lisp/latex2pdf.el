@@ -56,7 +56,7 @@
 (defun my-bibtex-select-buffer ()
   (interactive)
   (if (boundp 'tex-master)
-      (my-bibtex tex-master)
+      (my-bibtex (expand-file-name tex-master))
     (my-bibtex (buffer-file-name))))
 
 ;; Open tex-master file
