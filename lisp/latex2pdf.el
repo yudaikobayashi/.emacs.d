@@ -1,6 +1,6 @@
 ;; latex2pdf
 (defun latex2pdf (filename)
-  "Typesetting .tex file by ptex2pdf and reload .pdf in TeXShp.app."
+  "Typesetting .tex file by ptex2pdf and reload .pdf in TeXShop.app."
   (shell-command (concat
  		  "cd " (file-name-directory filename) " && "
 		  "ptex2pdf -l -ot \"-synctex=1 -file-line-error\" "
@@ -56,7 +56,7 @@
 (defun my-bibtex-select-buffer ()
   (interactive)
   (if (boundp 'tex-master)
-      (my-bibtex tex-master)
+      (my-bibtex (expand-file-name tex-master))
     (my-bibtex (buffer-file-name))))
 
 ;; Open tex-master file
