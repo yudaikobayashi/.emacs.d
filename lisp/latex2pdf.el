@@ -3,7 +3,7 @@
   "Typesetting .tex file by ptex2pdf and reload .pdf in TeXShp.app."
   (shell-command (concat
  		  "cd " (file-name-directory filename) " && "
-		  "/Library/TeX/texbin/ptex2pdf -l -ot \"-synctex=1 -file-line-error\" "
+		  "ptex2pdf -l -ot \"-synctex=1 -file-line-error\" "
  		  (file-name-nondirectory filename)
  		  " &> /dev/null"
 		  " && "
@@ -43,8 +43,6 @@
   (if (boundp 'tex-master)
       (latex2pdf-chrome-reload-file (concat (file-name-sans-extension tex-master) ".pdf"))
     (latex2pdf-chrome-reload-file (concat (file-name-sans-extension (buffer-file-name)) ".pdf"))))
-
-
 
 ;; BibTeX
 (defun my-bibtex (filename)
