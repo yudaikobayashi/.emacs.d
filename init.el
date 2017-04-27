@@ -38,17 +38,18 @@
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
  '(column-number-mode t)
  '(custom-enabled-themes (quote (manoj-dark)))
+ '(frame-resize-pixelwise t)
  '(fringe-mode 0 nil (fringe))
  '(mac-font-panel-mode nil)
  '(package-selected-packages
    (quote
-    (dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
+    (dash-at-point unicode-fonts dash dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore))
  '(safe-local-variable-values
    (quote
-    ((tex-master . "/Users/yudai/Dropbox/DesignsAndTheirCodes/designs.tex")
-     (tex-master . "/Users/yudai/werewolf-doc/werewolf-doc.tex"))))
+    ((tex-master . "minuscule.tex")
+     (tex-master . "designs.tex"))))
  '(scroll-bar-mode nil)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
