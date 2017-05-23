@@ -8,4 +8,3 @@ tell application "Safari"
 	set current tab to tab i
     end tell
 end tell
-

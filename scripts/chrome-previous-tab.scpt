@@ -7,4 +7,3 @@ tell application "Google Chrome"
 	set active tab index of window 1 to active tab index of window 1 - 1
     end if
 end tell
-
