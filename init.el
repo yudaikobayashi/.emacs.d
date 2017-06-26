@@ -43,7 +43,9 @@
  '(custom-enabled-themes (quote (manoj-dark)))
  '(frame-resize-pixelwise t)
  '(fringe-mode 0 nil (fringe))
- '(mac-font-panel-mode nil)
+ '(package-selected-packages
+   (quote
+    (unicode-fonts dash dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore))
  '(scroll-bar-mode nil)
