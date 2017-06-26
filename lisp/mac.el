@@ -42,14 +42,17 @@
     (interactive)
     (if (eq (frame-parameter nil 'fullscreen) 'fullscreen)
 	(progn
-	  (set-frame-parameter nil 'fullscreen 'nil)
-	  (set-frame-parameter nil 'alpha (frame-parameter nil 'alpha-restore)))
+ 	  (set-frame-parameter nil 'fullscreen 'nil)
+ 	  (set-frame-parameter nil 'alpha (frame-parameter nil 'alpha-restore)))
       (progn
-	(set-frame-parameter nil 'fullscreen 'fullscreen)
-	(set-frame-parameter nil 'alpha-restore (frame-parameter nil 'alpha))
-	(set-frame-parameter nil 'alpha '(100 . 100)))))
+ 	(set-frame-parameter nil 'fullscreen 'fullscreen)
+ 	(set-frame-parameter nil 'alpha-restore (frame-parameter nil 'alpha))
+ 	(set-frame-parameter nil 'alpha '(100 . 100)))))
   (global-set-key (kbd "C-s-f") 'my-toggle-frame-fullscreen)
   (global-set-key (kbd "<C-s-268632070>") 'my-toggle-frame-fullscreen))
+
+;; (global-set-key (kbd "C-s-f") 'toggle-frame-fullscreen)
+;; (global-set-key (kbd "<C-s-268632070>") 'toggle-frame-fullscreen)
 
 
 ;; Window Resize

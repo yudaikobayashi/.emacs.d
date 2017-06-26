@@ -5,4 +5,3 @@ tell application "Google Chrome"
 	execute javascript "window.scrollBy(0,50)"
     end tell
 end tell
-    
