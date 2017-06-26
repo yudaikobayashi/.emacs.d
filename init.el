@@ -44,23 +44,12 @@
  '(frame-resize-pixelwise t)
  '(fringe-mode 0 nil (fringe))
  '(mac-font-panel-mode nil)
- '(package-selected-packages
-   (quote
-    (unicode-fonts dash dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
- '(python-indent-offset 4)
- '(ring-bell-function (quote ignore))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore))
  '(scroll-bar-mode nil)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 (setq nxml-child-indent 4 nxml-attribute-indent 4)
 
@@ -70,5 +59,5 @@
 (require 'dashboard)
 (dashboard-setup-startup-hook)
 ;;(setq dashboard-items '((recents . 5) (bookmarks . 5) (projects . 5)))
-;;(setq dashboard-banner-logo-title "Welcome to ｱｯｶﾘ~ﾝ")
-;;(setq dashboard-startup-banner "~/Downloads/akari.jpeg")
+;;(setq dashboard-banner-logo-title "Welcome Message")
+;;(setq dashboard-startup-banner "source/to/image")
