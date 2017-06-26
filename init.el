@@ -15,13 +15,16 @@
 ;; Loading my elisp files
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (cond ((eq window-system 'mac) (load "mac.el"))
-      ((eq window-system 'x) (load "ubuntu.el")))
+      ((eq window-system 'x) (load "ubuntu.el"))
+      (t (menu-bar-mode 0)))
+
+;; Backup files
+(setq make-backup-files nil)
+(setq auto-save-default nil)
 
 (global-set-key (kbd "<tab>") 'completion-at-point)
-(global-set-key (kbd "<C-tab>") 'next-buffer)
-(global-set-key (kbd "<backtab>") 'previous-buffer)
-(global-set-key (kbd "s-]") 'next-buffer)
-(global-set-key (kbd "s-[") 'previous-buffer)
+(global-set-key (kbd "C-x n") 'next-buffer)
+(global-set-key (kbd "C-x p") 'previous-buffer)
 
 ;; Line number
 (require 'linum)
@@ -42,13 +45,9 @@
  '(mac-font-panel-mode nil)
  '(package-selected-packages
    (quote
-    (dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
+    (unicode-fonts dash dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore))
- '(safe-local-variable-values
-   (quote
-    ((tex-master . "/Users/yudai/Dropbox/DesignsAndTheirCodes/designs.tex")
-     (tex-master . "/Users/yudai/werewolf-doc/werewolf-doc.tex"))))
  '(scroll-bar-mode nil)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
