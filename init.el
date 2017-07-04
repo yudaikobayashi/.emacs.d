@@ -45,7 +45,7 @@
  '(fringe-mode 0 nil (fringe))
  '(package-selected-packages
    (quote
-    (unicode-fonts dash dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
+    (eww-lnum w3m unicode-fonts dash dashboard markdown-mode jedi android-mode swift-mode w3 undo-tree mmm-mode lua-mode google-c-style flycheck fill-column-indicator f exec-path-from-shell dash-functional csv-mode company applescript-mode apples-mode)))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore))
  '(scroll-bar-mode nil)

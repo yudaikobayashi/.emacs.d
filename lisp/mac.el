@@ -16,18 +16,13 @@
 (setq mac-right-option-modifier 'meta)
 (setq mac-command-modifier 'super)
 (setq mac-right-command-modifier 'super)
-;; Command-T to open Font Panel
-(global-set-key (kbd "s-t") 'mac-font-panel-mode)
 
-;;(global-set-key (kbd "s-o") 'find-file)
-;;(global-set-key (kbd "s-w") 'delete-frame)
-;;(global-set-key (kbd "s-t") 'ns-popup-font-panel)
+(global-set-key (kbd "s-t") 'mac-font-panel-mode)
 (global-set-key (kbd "s-a") 'mark-whole-buffer)
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-c") 'kill-ring-save)
-;;(global-set-key (kbd "s-v") 'yank)
-;;(global-set-key (kbd "s-x") 'kill-region)
-
+(global-set-key (kbd "s-v") 'yank)
+(global-set-key (kbd "s-x") 'kill-region)
 (global-set-key (kbd "s-m") 'iconify-frame)
 
 ;;(set-frame-parameter nil 'fullscreen 'fullboth)
@@ -55,12 +50,6 @@
 ;; (global-set-key (kbd "<C-s-268632070>") 'toggle-frame-fullscreen)
 
 
-;; Window Resize
-;;(global-set-key (kbd "C-s-<up>") 'enlarge-window)
-;;(global-set-key (kbd "C-s-<down>") 'shrink-window)
-;;(global-set-key (kbd "C-s-<right>") 'enlarge-window-horizontally)
-;;(global-set-key (kbd "C-s-<left>") 'shrink-window-horizontally)
-
 ;; Open File
 (defun open (filename)
   (interactive "fOpen file: ")
@@ -70,7 +59,3 @@
 ;;(setq visible-bell t)
 (setq ring-bell-function 'ignore)
 
-
-;; Splash image
-;; (setq fancy-splash-image (expand-file-name "~/splash.png"))
-;; (setq fancy-splash-image (expand-file-name "~/175_06l.jpg"))

@@ -1,4 +1,3 @@
-
 (defun chrome-reload ()
   (interactive)
   (shell-command "~/.emacs.d/scripts/chrome-reload.scpt"))
