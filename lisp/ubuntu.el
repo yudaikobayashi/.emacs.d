@@ -1,7 +1,7 @@
 ;; Typeset LaTeX file
 ;;(setq tex-run-command "/Library/TeX/texbin/ptex2pdf -l -ot \"-synctex=1 -file-line-error\"")
 
-(add-to-list 'default-frame-alist '(font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1"))
+;;(add-to-list 'default-frame-alist '(font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1"))
 ;;(add-to-list 'default-frame-alist '(font . "-*-Menlo-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1"))
 
 (menu-bar-mode 0)

@@ -70,7 +70,9 @@
        (lambda ()
 	 (progn
 	   (define-key latex-mode-map (kbd "C-s-t") 'latex2pdf-select-buffer)
+	   (define-key latex-mode-map (kbd "C-c C-x C-x") 'latex2pdf-select-buffer)
 	   (define-key latex-mode-map (kbd "C-s-o") 'latex2pdf-open-pdf-select-buffer)
+	   (define-key latex-mode-map (kbd "C-c C-x C-o") 'latex2pdf-open-pdf-select-buffer)
 	   (define-key latex-mode-map (kbd "C-s-b") 'my-bibtex-select-buffer)
 	   (define-key latex-mode-map (kbd "C-s-m") 'open-tex-master)
 	   (define-key latex-mode-map (kbd "C-c C-d") (lambda () (interactive) (insert "\\xLeftrightarrow{\\rm{def}}")))

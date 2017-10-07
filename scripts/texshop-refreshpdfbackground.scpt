@@ -1,5 +1,4 @@
 #!/usr/bin/osascript
-
 on run argv
     tell application "TeXShop"
 	repeat with n from 1 to count documents
