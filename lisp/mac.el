@@ -22,7 +22,7 @@
 (global-set-key (kbd "s-c") 'kill-ring-save)
 (global-set-key (kbd "s-v") 'yank)
 (global-set-key (kbd "s-x") 'kill-region)
-(global-set-key (kbd "s-m") 'iconify-frame)
+;; (global-set-key (kbd "s-m") 'iconify-frame)
 
 ;;(set-frame-parameter nil 'fullscreen 'fullboth)
 ;; (if window-system (set-frame-parameter nil 'alpha 100))
