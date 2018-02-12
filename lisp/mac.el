@@ -1,7 +1,7 @@
 (load "latex2pdf.el")
 
 ;; Setting for Mac
-(add-to-list 'default-frame-alist '(font . "-*-Menlo-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1"))
+(add-to-list 'default-frame-alist '(font . "-*-Menlo-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1"))
 ;;(add-to-list 'default-frame-alist '(alpha . (78 . 50)))
 ;;(add-to-list 'default-frame-alist '(fullscreen . fullheight))
 ;;(add-to-list 'default-frame-alist '(height . 45))
@@ -57,4 +57,3 @@
 ;; Beep
 ;;(setq visible-bell t)
 (setq ring-bell-function 'ignore)
-
