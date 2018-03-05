@@ -34,4 +34,3 @@
   "set frame parameter 'right-fringe for the current frame"
   (interactive "nright-fringe: ")
   (set-frame-parameter nil 'right-fringe width))
-
