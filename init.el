@@ -29,6 +29,10 @@
 (require 'linum)
 (global-linum-mode 1)
 
+;; 80 column ruler
+(require 'fill-column-indicator)
+(fci-mode 1)
+
 (custom-set-variables
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
@@ -40,7 +44,7 @@
  '(fringe-mode 0 nil (fringe))
  '(package-selected-packages
    (quote
-    (arduino-mode csv unicode-fonts dash dashboard markdown-mode android-mode swift-mode undo-tree mmm-mode lua-mode flycheck fill-column-indicator f dash-functional csv-mode company)))
+    (unicode-fonts dash dashboard markdown-mode undo-tree mmm-mode ua-mode flycheck fill-column-indicator f dash-functional company)))
  '(python-indent-offset 4)
  '(ring-bell-function (quote ignore))
  '(scroll-bar-mode nil)
@@ -51,5 +55,4 @@
 (setq nxml-child-indent 4 nxml-attribute-indent 4)
 
 ;; (setq confirm-kill-emacs 'y-or-n-p)
-
-(load "lean.el")
+;; (load "lean.el")
